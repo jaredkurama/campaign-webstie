@@ -22,6 +22,7 @@ body {
   color: var(--ink);
   background: radial-gradient(circle at top, #fef5e7, #e9f4f3 40%, #f7f2ea 80%);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 main {
@@ -495,6 +496,10 @@ button {
 }
 
 @media (max-width: 600px) {
+  main {
+    padding: 0 5vw 5rem;
+  }
+
   .nav-links {
     flex-wrap: wrap;
     gap: 1rem;
@@ -518,5 +523,11 @@ button {
 
   .diaspora {
     padding: 2rem 1.5rem;
+  }
+
+  .banner,
+  .gallery {
+    margin: 0;
+    border-radius: var(--radius);
   }
 }
