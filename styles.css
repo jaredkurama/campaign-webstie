@@ -31,6 +31,26 @@ main {
   padding: 0 6vw 6rem;
 }
 
+.banner {
+  margin: 2rem -6vw 0;
+  border-radius: calc(var(--radius) * 1.2);
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(11, 28, 46, 0.12);
+  background: #bfe7c6;
+  padding: 1rem 2rem;
+  border: 2px solid var(--midnight);
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+  height: 420px;
+  object-fit: contain;
+  background: #bfe7c6;
+  border-radius: calc(var(--radius) * 0.8);
+  border: 2px solid var(--midnight);
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -83,12 +103,13 @@ main {
 }
 
 .cta {
-  background: var(--midnight);
-  color: white;
+  background: var(--sun);
+  color: var(--midnight);
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
   font-weight: 600;
   text-decoration: none;
+  box-shadow: 0 12px 24px rgba(11, 28, 46, 0.18);
 }
 
 .hero {
@@ -118,6 +139,12 @@ main {
   line-height: 1.7;
   color: var(--muted);
   max-width: 34rem;
+}
+
+.support-note {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--midnight);
 }
 
 .hero-actions {
@@ -349,6 +376,43 @@ main {
   min-height: 220px;
 }
 
+.diaspora {
+  background: #ffffff;
+  border-radius: calc(var(--radius) * 1.2);
+  padding: 3rem;
+  border: 1px solid var(--stroke);
+  box-shadow: 0 18px 40px rgba(11, 28, 46, 0.08);
+}
+
+.diaspora-note {
+  max-width: 48rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.diaspora-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.diaspora-grid .photo-slot {
+  min-height: 210px;
+}
+
+.diaspora-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.diaspora-videos video {
+  width: 100%;
+  border-radius: var(--radius);
+  background: #0b1c2e;
+  box-shadow: 0 12px 28px rgba(11, 28, 46, 0.1);
+}
+
 .contact-card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -357,6 +421,7 @@ main {
   color: white;
   padding: 2.5rem;
   border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .field {
@@ -377,6 +442,13 @@ textarea {
   border-radius: 14px;
   border: none;
   font-family: inherit;
+  background: white;
+  color: var(--ink);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #7a8796;
 }
 
 button {
@@ -438,5 +510,17 @@ button {
 
   .carousel-track {
     grid-auto-columns: minmax(220px, 1fr);
+  }
+
+  .banner img {
+    height: 280px;
+  }
+
+  .banner {
+    padding: 0.8rem 1rem;
+  }
+
+  .diaspora {
+    padding: 2rem 1.5rem;
   }
 }
