@@ -36,19 +36,19 @@ main {
   border-radius: calc(var(--radius) * 1.2);
   overflow: hidden;
   box-shadow: 0 20px 45px rgba(11, 28, 46, 0.12);
-  background: #bfe7c6;
-  padding: 1rem 2rem;
-  border: 2px solid var(--midnight);
+  background: transparent;
+  padding: 0;
+  border: none;
 }
 
 .banner img {
   width: 100%;
   display: block;
   height: 420px;
-  object-fit: contain;
-  background: #bfe7c6;
-  border-radius: calc(var(--radius) * 0.8);
-  border: 2px solid var(--midnight);
+  object-fit: cover;
+  background: transparent;
+  border-radius: 0;
+  border: none;
 }
 
 .site-header {
@@ -514,10 +514,6 @@ button {
 
   .banner img {
     height: 280px;
-  }
-
-  .banner {
-    padding: 0.8rem 1rem;
   }
 
   .diaspora {
