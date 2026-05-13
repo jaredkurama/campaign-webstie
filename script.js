@@ -179,7 +179,7 @@ if (form) {
     );
 
     window.location.href =
-      `mailto:info@ubasanitinubusupportnetworkuk2027.org.uk?subject=${subject}&body=${body}`;
+        `mailto:ubasanitinubusupportnetworkuk@gmail.com?subject=${subject}&body=${body}`;
   });
 }
 
